@@ -3,20 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.springframework.samples.spring</groupId>
-	<artifactId>spring-utility</artifactId>
+	<groupId>com.jimmyking</groupId>
+	<artifactId>toolkit</artifactId>
 	<version>1.0.0.CI-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>Spring Utility</name>
-	<url>http://www.springframework.org</url>
-	<description>
-		<![CDATA[
-      This project is a minimal jar utility with Spring configuration.
-    ]]>
-	</description>
 	<properties>
 		<maven.test.failure.ignore>true</maven.test.failure.ignore>
-		<spring.framework.version>3.0.6.RELEASE</spring.framework.version>
+		<spring.framework.version>4.1.5.RELEASE</spring.framework.version>
 	</properties>	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -24,22 +17,59 @@
 			<version>4.7</version>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- spring start -->
 		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-test</artifactId>
-			<version>${spring.framework.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context</artifactId>
-			<version>${spring.framework.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>1.2.14</version>
-		</dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.framework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>${spring.framework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.framework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${spring.framework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>${spring.framework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.framework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring.framework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.framework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.framework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${spring.framework.version}</version>
+        </dependency>
+        <!-- spring end -->
 	</dependencies>
 
 	<build>
@@ -55,4 +85,5 @@
  
 		</plugins>
 	</build> 
+	
 </project>
